@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hendrik Machewitz</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+/* Easteregg */
+    .shadow-img {
+    width: 300px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    }
+    .easteregg-container {
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    z-index: 1000;
+    }
+
+    .easteregg-image {
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    }
+
+    .easteregg-container:hover .easteregg-image {
+    opacity: 1;
+    }  
+  </style>
+</head>
+<body class="bodyStartseite">
+    
+<div class="Viewport">
+  <header id="HeaderStartseite">
+    <nav id="NavStartseite">
+      <ul>
+        <li>
+            <a href="ÜberMich.html">
+            <button>Über Mich</button>
+            </a>
+        </li>
+        <li>
+            <a href="Interessen.html">
+            <button>Interessen</button>
+            </a>
+        </li>
+        <li>
+            <a href="Hobbys.html">
+            <button>Hobbys</button>
+            </a> 
+        </li>
+        <li><a href="Erfahrung.html">
+            <button>Erfahrung</button>
+            </a>
+        </li>
+      </ul>
+    </nav>
+
+    <h1 id="HendrikCaption">Hendrik Machewitz</h1>
+
+    <div class="image-wrapper">
+      <img class="shadow-img" src="Images/Hendrik1.JPG"/>
+            <a href="Dateien\Lebenslauf_Hendrik.pdf" download="Dateien\Lebenslauf_Hendrik.pdf"> 
+            <button class="image-button">Lebenslauf Download
+            </button>
+            </a>       
+    </div>
+</div>
+  </header>
+
+<main class="mainStartseite">
+  
+    <div class="box-container row-layout">
+        <div class="boxStartseite">Hey schön, dass du da bist! Hier findest du Informationen über meine Projekte, 
+                        Interessen und alles, woran ich gerade arbeite. Stöbere gerne durch die 
+                        Seiten und lerne mich besser kennen. Viel Spaß!
+        </div>
+    </div>
+    
+         <div class="easteregg-container">
+             <img class="easteregg-image" src="Images/Memes/Luigi.png">
+        </div>
+  </main>
+
+    <footer id="custom-footer">
+    <div class="footer-inner">
+        <p>- Hendrik Machewitz -</p> <br>
+        <nav>
+        <a href="hendrik123.de@gmail.com">E-Mail schreiben</a> |
+        <a href="Dateien\Lebenslauf_Hendrik.pdf" download="Dateien\Lebenslauf_Hendrik.pdf">Lebenslauf</a>
+        </nav>
+    </div>
+    </footer>
+</div>  
+</body>
+
+</html>
